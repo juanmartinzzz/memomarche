@@ -108,7 +108,7 @@ class _SpeechSampleAppState extends State<SpeechSampleApp> with TickerProviderSt
   }
 
   Future<http.Response> sendTelegramMessage(String message) {
-    const String botId = '135480527:AAE02c_FoptWIqGplKEbW5A_cRu43xPSsjc';
+    const String botId = String.fromEnvironment('TELEGRAM_JUAN_BOT_API_KEY', defaultValue: 'Default value established when reading the ENV variable.');
     const telegramGroupIds = {
       MessageTypes.purchase: '-4224310244',
       MessageTypes.reminder: '-4272844606',

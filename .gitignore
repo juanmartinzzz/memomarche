@@ -9,6 +9,7 @@
 .history
 .svn/
 migrate_working_dir/
+*run-this-file-to-build-the-app-with-secrets.sh
 
 # IDEs
 *.iml
